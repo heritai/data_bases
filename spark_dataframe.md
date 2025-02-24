@@ -44,7 +44,7 @@ The data loading process involves reading the CSV files into Spark DataFrames an
 spark = SparkSession.builder.appName("BooksDataAnalysis").getOrCreate()
 
 # Define data path
-path = "/tmp/BDLE/dataset/Books/"
+path = "dataset/Books/"
 
 # Load datasets
 users_df = spark.read.format("csv").option("header", "true").option("inferSchema", "true").load(path + "users.csv")

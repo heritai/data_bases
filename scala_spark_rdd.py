@@ -136,7 +136,7 @@ class Ratings:
 
 def analyze_books_dataset():
     """Analyzes the books dataset using Spark RDDs."""
-    path = "/tmp/BDLE/dataset/Books/" # Correct path to your dataset
+    path = "/dataset/Books/" # Correct path to your dataset
 
     # Load the data
     books_data = sc.textFile(path + "books.csv")
